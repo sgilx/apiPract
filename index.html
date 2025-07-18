@@ -10,10 +10,30 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
 </head>
 <body>
-    <form>
-        <input type="text" id="movieName" placeholder="Enter a movie name">
-        <button id="findMovie">Go</button>
-    </form>    
+    <div id="searchForm" class="container">
+        <div class="row">
+            <div class="input-field col s12 m4">
+                <input type="text" id="movieTitle" placeholder="Movie Title">
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12 m4">
+                <input type="text" id="movieYear" placeholder="Movie Year">
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12 m4">
+                <input type="text" id="movieGenre" placeholder="Movie Genre">
+            </div>
+        </div>
+        <div class="col s12">
+            <buttn class="btn waves-effect" id="findMovie">Find Movie</buttn>
+        </div>
+    </div>
+
+    <div class="container" id="movieDetails">
+        
+    </div>
     
     <script src="app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
