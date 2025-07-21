@@ -5,38 +5,27 @@
     <title>API Practice</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"/>
 </head>
 <body>
-    <div id="searchForm" class="container">
-        <div class="row">
-            <div class="input-field col s12 m4">
-                <input type="text" id="movieTitle" placeholder="Movie Title"/>
-            </div>
+    <section class="hero is-primary is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Film Finder
+            <span class="icon">
+              <i class="fas fa-film"></i>
+            </span>
+          </h1>
         </div>
-        <div class="row">
-            <div class="input-field col s12 m4">
-                <input type="text" id="movieYear" placeholder="Movie Year">
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12 m4">
-                <input type="text" id="movieGenre" placeholder="Movie Genre">
-            </div>
-        </div>
-        <div class="col s12">
-            <buttn class="btn waves-effect" id="findMovie">Find Movie</buttn>
-        </div>
+      </div>
+    </section>
+    <div class="container">
+        <div class="autocomplete"></div>
+        <div id="summary"></div>
     </div>
-
-    <div class="container" id="movieDetails">
-
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="utilities.js"></script>
     <script src="app.js"></script>
 </body>
